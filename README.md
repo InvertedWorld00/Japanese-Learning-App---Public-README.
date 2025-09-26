@@ -13,6 +13,7 @@ Please scroll down for my how get started guide, features, specific tech stack, 
 1. **Visit the Application**: Navigate to the live demo at `https://nihongoneko.nn-dev.co.uk`
 2. **Sign In**: Click "Login with Google" to authenticate with your Google account
 3. **Start Learning**: Click "Start Learning Now" to begin your Japanese vocabulary journey
+![Login Flow Demo](docs/loginflow.gif)
 
 ### Learning Process
 1. **Card Presentation**: Each card shows a Japanese vocabulary word
