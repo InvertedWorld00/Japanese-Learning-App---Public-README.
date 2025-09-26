@@ -22,6 +22,7 @@ A visual representation of this can be shown below, once you login, you're greet
   3. **Self-Assessment**: Try to recall the meaning before revealing the answer
   4. **Progress Rating**: Select "Good" or "Again" based on your performance
   5. **SRS Optimization**: The algorithm adjusts future review intervals based on your responses
+  
   A visual representation is shown of this below:
   ![Practice Page Demo](docs/practicepage_demo.gif)
 
