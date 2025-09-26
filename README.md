@@ -1,4 +1,4 @@
-# NihongoNeko - Japanese Learning App - https://nihongoneko.nn-dev.co.uk/
+# NihongoNeko🐱 - Japanese Learning App - https://nihongoneko.nn-dev.co.uk/
 
 As part of my language learning journey, I decided to build my own flashcard system to help cement vocabulary into long-term memory. The idea was to use a Spaced Repetition System (SRS) algorithm, which figures out the best time for a user to review a card so the word really sticks. With enough practice, this approach can make someone genuinely proficient in a language. The concept is inspired by the popular app Anki (https://apps.ankiweb.net/), but I wanted to create my own take on it.
 
@@ -13,6 +13,7 @@ Please scroll down for my how get started guide, features, specific tech stack, 
 1. **Visit the Application**: Navigate to the live demo at `https://nihongoneko.nn-dev.co.uk`
 2. **Sign In**: Click "Login with Google" to authenticate with your Google account
 3. **Start Learning**: Click "Start Learning Now" to begin your Japanese vocabulary journey
+A visual representation of this can be shown below, once you login, you're greeted with the "Accounts" page, simply, you'd browse over to "Practice" to get started, once all cards are completed, come back the next day! The OAuth flow was edited out of the below for security reasons.
 ![Login Flow Demo](docs/loginflow.gif)
 
 ### Learning Process
@@ -21,6 +22,11 @@ Please scroll down for my how get started guide, features, specific tech stack, 
 3. **Self-Assessment**: Try to recall the meaning before revealing the answer
 4. **Progress Rating**: Select "Good" or "Again" based on your performance
 5. **SRS Optimization**: The algorithm adjusts future review intervals based on your responses
+A visual representation is shown of this below:
+![Practice Page Demo](docs/practicepage_demo.gif)
+
+In the console here, we can see "Good" or "Again" marked and submitted to the database, the Machine Learning SRS Algorithm then determines in what interval the card should be next reviewed, tagging it with either the "learning" or "review" status for the Database. Individual user progress is all tracked by the users GoogleID passed to us from the OAuth sign in, ensuring the individual user has persistance and their account progress is of course, their own:
+![Session Logging Demo](docs/sessionlogging.gif)
 
 ## Features
 
@@ -160,7 +166,7 @@ Infrastructure Stack:
 - **Review Cards**: See cards scheduled for review
 - **Success Rate**: Track your overall learning performance
 
-## 🔧 Tech Stack
+## Tech Stack
 
 ### Backend Technologies
 - **Python 3.9+** with Flask framework
