@@ -25,7 +25,7 @@ A visual representation of this can be shown below, once you login, you're greet
 A visual representation is shown of this below:
 ![Practice Page Demo](docs/practicepage_demo.gif)
 
-In the console here, we can see "Good" or "Again" marked and submitted to the database, the Machine Learning SRS Algorithm then determines in what interval the card should be next reviewed, tagging it with either the "learning" or "review" status for the Database. Individual user progress is all tracked by the users GoogleID passed to us from the OAuth sign in, ensuring the individual user has persistance and their account progress is of course, their own:
+  In the console here, we can see "Good" or "Again" marked and submitted to the database, the Machine Learning SRS Algorithm then determines in what interval the card should be next reviewed, tagging it with either the "learning" or "review" status for the Database. Individual user progress    is all tracked by the users GoogleID passed to us from the OAuth sign in, ensuring the individual user has persistance and their account progress is of course, their own:
 ![Session Logging Demo](docs/sessionlogging.gif)
 
 ## Features
