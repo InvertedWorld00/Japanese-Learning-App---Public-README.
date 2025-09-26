@@ -16,17 +16,17 @@ Please scroll down for my how get started guide, features, specific tech stack, 
 A visual representation of this can be shown below, once you login, you're greeted with the "Accounts" page, simply, you'd browse over to "Practice" to get started, once all cards are completed, come back the next day! The OAuth flow was edited out of the below for security reasons.
 ![Login Flow Demo](docs/loginflow.gif)
 
-### Learning Process
-1. **Card Presentation**: Each card shows a Japanese vocabulary word
-2. **Audio Playback**: Use the "Sound" button to hear proper pronunciation
-3. **Self-Assessment**: Try to recall the meaning before revealing the answer
-4. **Progress Rating**: Select "Good" or "Again" based on your performance
-5. **SRS Optimization**: The algorithm adjusts future review intervals based on your responses
-A visual representation is shown of this below:
-![Practice Page Demo](docs/practicepage_demo.gif)
+  ### Learning Process
+  1. **Card Presentation**: Each card shows a Japanese vocabulary word
+  2. **Audio Playback**: Use the "Sound" button to hear proper pronunciation
+  3. **Self-Assessment**: Try to recall the meaning before revealing the answer
+  4. **Progress Rating**: Select "Good" or "Again" based on your performance
+  5. **SRS Optimization**: The algorithm adjusts future review intervals based on your responses
+  A visual representation is shown of this below:
+  ![Practice Page Demo](docs/practicepage_demo.gif)
 
   In the console here, we can see "Good" or "Again" marked and submitted to the database, the Machine Learning SRS Algorithm then determines in what interval the card should be next reviewed, tagging it with either the "learning" or "review" status for the Database. Individual user progress    is all tracked by the users GoogleID passed to us from the OAuth sign in, ensuring the individual user has persistance and their account progress is of course, their own:
-![Session Logging Demo](docs/sessionlogging.gif)
+  ![Session Logging Demo](docs/sessionlogging.gif)
 
 ## Features
 
